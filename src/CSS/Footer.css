@@ -1,0 +1,58 @@
+.footer {
+    background-color: #333; /* Color de fondo oscuro */
+    color: #fff; /* Color de texto blanco */
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Pega el footer al final de la página */
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Para que se ajusten en pantallas pequeñas */
+    margin-bottom: 20px;
+  }
+  
+  .footer-section {
+    flex: 1 1 200px; /* Distribuye el espacio entre las secciones */
+    margin: 10px;
+    text-align: left; /* Alinea el texto a la izquierda en cada sección */
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 10px;
+    color: #eee;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-section a {
+    color: #ccc;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    color: #fff;
+  }
+  
+  .social-icons {
+      display: flex;
+      gap: 10px;
+  }
+  
+  .social-icons img{
+      width: 30px;
+      height: 30px;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #555;
+    padding-top: 10px;
+  }

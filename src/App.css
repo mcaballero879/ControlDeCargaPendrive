@@ -1,0 +1,94 @@
+.App {
+  display: flex; /* Para el header y el contenido principal */
+  flex-direction: column; /* Alinea verticalmente */
+  min-height: 100vh; /* Para que el footer se pegue abajo si el contenido es corto */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* Espacia el título y el carrito */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ddd;
+}
+
+.carrito-header {
+  font-weight: bold;
+}
+
+.HomeClase {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1; /* Para que ocupe el espacio disponible */
+}
+
+.games-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.game-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: transform 0.2s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.game-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.game-card h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #333;
+    text-align: center;
+}
+
+.game-card p { /* Estilo para el "peso" */
+    text-align: center;
+    font-size: 1em; /* Ajustado el tamaño para "peso" */
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el botón */
+.game-card button {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición para el hover */
+}
+
+.game-card button:hover {
+    background-color: #45a049; /* Verde más oscuro al hover */
+}
