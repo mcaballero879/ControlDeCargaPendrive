@@ -31,7 +31,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; {anioActual} [Nombre de tu tienda]. Todos los derechos reservados.</p>
+          <p>&copy; {anioActual} PlayTheGame. Todos los derechos reservados.</p>
         </div>
       </footer>
     );
