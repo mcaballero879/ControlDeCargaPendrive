@@ -1,4 +1,4 @@
-import Carrito from './Carrito'; // Importa el componente Carrito
+import Carrito from "../components/Carrito"; // Importa el componente Carrito
 
 const PaginaCarrito = ({ carrito, pesoTotal, onEliminar }) => {
   return (

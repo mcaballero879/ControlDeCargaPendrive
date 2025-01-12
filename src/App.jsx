@@ -2,10 +2,10 @@ import Home from "./Pages/Home";
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Carrito from "./components/Carrito";
+// import Carrito from "./components/Carrito";
 import Footer from "./components/Footer";
 import './App.css';
-
+import PaginaCarrito from "./Pages/PaginaCarrito";
 function App() {
     const [carrito, setCarrito] = useState([]);
     const [pesoTotal, setPesoTotal] = useState(0);
@@ -36,9 +36,11 @@ function App() {
                 <Header carrito={carrito} pesoTotal={pesoTotal} />
                 <Routes>
                     <Route path="/" element={<Home agregarAlCarrito={agregarAlCarrito} />} />
+                    <Route path="/carrito" element={<PaginaCarrito carrito={carrito} pesoTotal={pesoTotal} onEliminar={eliminarDelCarrito} />} /> {/* Nueva ruta */}
                 </Routes>
                 {/* ***CORRECCIÓN CRUCIAL: Pasar la función eliminarDelCarrito como prop*** */}
-                <Carrito carrito={carrito} pesoTotal={pesoTotal} onEliminar={eliminarDelCarrito} />
+               {/* <Carrito carrito={carrito} pesoTotal={pesoTotal} onEliminar={eliminarDelCarrito} /> */}
+                
                 <Footer/>
             </div>
         </Router>

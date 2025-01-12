@@ -24,8 +24,8 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Síguenos</h4>
             <div className="social-icons"> {/* Contenedor para iconos sociales */}
-              <a href="#" target="_blank" rel="noopener noreferrer"><img src="/facebook-icon.png" alt="Facebook" /></a> {/* Icono de Facebook */}
-              <a href="#" target="_blank" rel="noopener noreferrer"><img src="/twitter-icon.png" alt="Twitter" /></a> {/* Icono de Twitter */}
+              <a href="https://www.facebook.com/marketplace/profile/1566374584/" target="_blank" ><img src="./public/facebook.png" alt="Facebook" /></a> {/* Icono de Facebook */}
+              <a href="https://www.instagram.com/playthegame879/" target="_blank" ><img src="./public/instagram.png" alt="Instagram" /></a> {/* Icono de Instagram */}
               {/* Otros iconos sociales */}
             </div>
           </div>

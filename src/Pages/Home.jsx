@@ -42,7 +42,7 @@ const Home = ({ agregarAlCarrito }) => {
         ) : busqueda !== "" ? ( //Mensaje si no hay resultados y la busqueda no esta vacia
             <p>No se encontraron juegos.</p>
         ) : (
-            <p>Comienza a buscar un juego</p>
+            <p>Comienza buscando un juego</p>
         )}
       </div>
     </div>

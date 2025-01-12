@@ -92,3 +92,18 @@
 .game-card button:hover {
     background-color: #45a049; /* Verde más oscuro al hover */
 }
+
+/* ... otros estilos */
+
+.pagina-carrito {
+    padding: 20px;
+    min-height: calc(100vh - 80px); /* Ajusta el 80px según la altura de tu header y otros elementos */
+  }
+  .nav-header{
+      display: flex;
+      gap: 10px;
+  }
+  .nav-header a{
+      text-decoration: none;
+      color: black;
+  }
